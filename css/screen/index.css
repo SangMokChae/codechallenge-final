@@ -1,0 +1,46 @@
+.header-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: rgb(243, 6, 85) 3px 0 10px;
+}
+
+#input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 120px;
+}
+
+.username,
+.password {
+  border: none;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 10px 5px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.username,
+.password:focus {
+  outline: none;
+}
+
+#input-container input[type="submit"] {
+  cursor: pointer;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: brown;
+  font: 600;
+  font-size: 20px;
+  font-weight: 600;
+  outline: none;
+}

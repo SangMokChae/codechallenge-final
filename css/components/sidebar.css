@@ -1,0 +1,98 @@
+.sidebar__boxs {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 70px;
+  height: 87vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 30px 0px;
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+  transform: translateX(-35px);
+}
+
+.sidebar__boxs:hover {
+  transform: none;
+}
+
+.sidebar-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.material-icons > a {
+  color: var(--mainBlack);
+  text-decoration: none;
+}
+
+@keyframes hoverChangeColor {
+  from {
+    color: var(--mainBlack);
+  }
+  to {
+    color: hotpink;
+  }
+}
+
+.sidebar-icons > .material-icons > a:hover {
+  animation: hoverChangeColor 1s linear infinite;
+}
+
+.sidebar-icons > li {
+  font-size: 30px;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+@keyframes ringCircle {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotateY(360deg);
+    color: #f1d800;
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.sidebar-icons > .smile {
+  animation: ringCircle 2s linear infinite;
+}
+
+.sidebar-icons > .calender {
+  color: red;
+}
+
+@keyframes overCalender {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0);
+    transform: translateY(0) rotateX(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+  }
+  100% {
+    -webkit-transform: translateY(-100%) rotateX(180deg);
+    transform: translateY(-100%) rotateX(180deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+}
+
+.sidebar-icons > .calender:hover {
+  animation: overCalender 1s ease-in-out infinite;
+}
+
+#facebook {
+  color: #1878f3;
+  text-decoration: none;
+}
+
+#sidebar-appear {
+  margin-left: 28px;
+}
