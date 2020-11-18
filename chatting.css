@@ -1,0 +1,176 @@
+@import "../components/chatting-top.css";
+
+#groupchatting {
+  background: rgba(183, 218, 231);
+  height: 1000vh;
+  position: relative;
+}
+
+.today-log {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  font-size: 20px;
+  color: var(--mainBlack);
+  text-shadow: black 1px 0 10px;
+}
+
+.message {
+  margin-top: 40px;
+}
+
+@keyframes fromLeftCome {
+  from {
+    transform: scaleX(-300px);
+    transform: translateX(-500px);
+  }
+  to {
+    transform: scaleX(0);
+    transform: translateX(0);
+  }
+}
+
+.message-content {
+  display: flex;
+  animation: fromLeftCome 1s ease-in;
+}
+
+.message-content > img {
+  margin-left: 10px;
+}
+
+@keyframes rightContentCome {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.message-content__right {
+  display: flex;
+  justify-content: flex-end;
+  animation: rightContentCome 0.5s linear;
+}
+
+.message-info {
+  display: flex;
+  align-items: flex-end;
+  margin: 3px 0;
+}
+
+.message-info__right {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  margin: 15px 10px;
+}
+
+.message-info > span,
+.message-info__right > span {
+  font-size: 13px;
+  margin: 0 5px;
+}
+
+.chat-user,
+.message-box {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#blackhole {
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin: 10px 0px 0px 60px;
+  animation: rightContentCome 3s linear;
+}
+
+.text_bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+}
+
+.input-submit__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#text-contents {
+  width: 90%;
+  border: none;
+  outline: none;
+  word-wrap: break-word;
+}
+
+#text-contents:focus {
+  height: 50px;
+}
+
+#input-submit {
+  padding: 5px;
+  background-color: skyblue;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+  color: white;
+}
+
+#input-submit:hover {
+  background-color: red;
+}
+
+.option-bar,
+.option-bar__icons {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.option-bar__icons > li > span {
+  margin: 5px 20px;
+  font-size: 24px;
+  color: var(--mainBlack);
+}
+
+.alarm-message {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.alarm-message__top {
+  padding: 15px 10px;
+  background-color: #ffd2da;
+  color: var(--mainBlack);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.alarm-message__middle {
+  padding: 15px 10px;
+  background-color: white;
+}
+
+.alarm-message__middle:hover {
+  font-size: 26px;
+}
+
+.alarm-message__bottom {
+  padding: 15px 10px;
+  background-color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+}

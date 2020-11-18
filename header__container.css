@@ -1,0 +1,13 @@
+.header__container {
+  justify-content: space-between;
+  display: flex;
+  margin-right: 10px;
+  color: var(--mainBlack);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.header__icons > .material-icons {
+  font-size: 25px;
+  cursor: pointer;
+}
