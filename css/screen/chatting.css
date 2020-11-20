@@ -1,8 +1,8 @@
 @import "../components/chatting-top.css";
 
 #groupchatting {
-  background: rgba(183, 218, 231);
-  height: 1000vh;
+  background: linear-gradient(to bottom, white, #43c2f0);
+  height: 100vh;
   position: relative;
 }
 
