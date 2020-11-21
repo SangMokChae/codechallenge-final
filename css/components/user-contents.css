@@ -109,12 +109,19 @@
   align-items: center;
   margin: var(--notLeftMargin);
   animation: bounce-in-top 2s ease-in-out;
+  height: 80px;
+  border-radius: 25px;
+  box-shadow: 0 5px 5px rgba(220, 220, 220, 0.18),
+    0 1px 3px rgba(255, 255, 255, 0.4);
 }
 
 .user:hover {
-  border-radius: 10px;
   background-color: var(--mainBlack);
   color: white;
+}
+
+.user:active {
+  transform: scale(0.98);
 }
 
 .user > a {

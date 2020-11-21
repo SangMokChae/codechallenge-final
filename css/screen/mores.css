@@ -1,6 +1,12 @@
 .user__more {
-  border-bottom: 2px solid white;
-  padding-bottom: 15px;
+  margin-right: 25px;
+}
+
+#more-options {
+  margin-top: 20px;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  width: 98%;
 }
 
 @keyframes comeList {
@@ -16,17 +22,24 @@
   color: white;
   text-shadow: 1px 1px 2px hotpink, 0 0 1em purple, 0 0 0.2em skyblue;
   font-size: 30px;
-  margin: 40px 10px 0 0;
+  margin: 40px 20px 0 0;
+  height: 40px;
   padding: 10px;
   display: flex;
   align-items: center;
   cursor: pointer;
   animation: comeList 1s ease-in-out;
+  box-shadow: 0 5px 5px rgba(220, 220, 220, 0.18),
+    0 1px 3px rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
 }
 
 .more-lists:hover {
-  border-radius: 10px;
   background-color: var(--mainBlack);
+}
+
+.more-lists:active {
+  transform: scale(0.98);
 }
 
 .more-lists > span {
