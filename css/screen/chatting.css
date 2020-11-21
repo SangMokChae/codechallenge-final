@@ -115,6 +115,7 @@
 
 #text-contents:focus {
   height: 50px;
+  font-size: 30px;
 }
 
 #input-submit {

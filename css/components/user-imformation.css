@@ -41,12 +41,11 @@
 }
 
 .profile__music {
-  margin-top: 220px;
+  margin: 220px 0 0 20%;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 60%;
-  margin-left: 20%;
   font-weight: 700;
   text-shadow: 1px 1px 2px white;
 }

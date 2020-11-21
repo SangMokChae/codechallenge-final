@@ -16,13 +16,12 @@
   color: white;
   text-shadow: 1px 1px 2px hotpink, 0 0 1em purple, 0 0 0.2em skyblue;
   font-size: 30px;
-  margin: 40px 0;
+  margin: 40px 10px 0 0;
   padding: 10px;
   display: flex;
   align-items: center;
   cursor: pointer;
   animation: comeList 1s ease-in-out;
-  margin-right: 10px;
 }
 
 .more-lists:hover {
